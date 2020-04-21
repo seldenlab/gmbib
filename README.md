@@ -1,6 +1,6 @@
 # gmbib
 
-Robert Z. Selden, Jr; Christian S. Hoggard; and Sarah Y. Stark
+Robert Z. Selden, Jr; Christian S. Hoggard; Sarah Y. Stark, and Morgane Dubied
 
 _A bibliometric study of geometric morphometrics in archaeology_
 
