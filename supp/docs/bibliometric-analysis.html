@@ -24,7 +24,7 @@
 <meta name="author" content="Robert Z. Selden, Jr.; Christian S. Hoggard; Sarah Y. Stark; and Morgane Dubied" />
 
 
-<meta name="date" content="2020-04-17" />
+<meta name="date" content="2020-04-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -363,7 +363,7 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 <pre><code>## 
 ## Converting your scopus collection into a bibliographic dataframe
 ## 
-## Articles extracted   97 
+## Articles extracted   96 
 ## Done!
 ## 
 ## 
@@ -380,35 +380,35 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 ## MAIN INFORMATION ABOUT DATA
 ## 
 ##  Timespan                              2002 : 2020 
-##  Sources (Journals, Books, etc)        36 
-##  Documents                             97 
-##  Average years from publication        4.62 
-##  Average citations per documents       18.13 
-##  Average citations per year per doc    2.55 
-##  References                            7707 
+##  Sources (Journals, Books, etc)        35 
+##  Documents                             96 
+##  Average years from publication        4.61 
+##  Average citations per documents       18.22 
+##  Average citations per year per doc    2.56 
+##  References                            7688 
 ##  
 ## DOCUMENT TYPES                     
-##  article           92 
+##  article           91 
 ##  book chapter      1 
 ##  editorial         1 
 ##  review            3 
 ##  
 ## DOCUMENT CONTENTS
 ##  Keywords Plus (ID)                    673 
-##  Author&#39;s Keywords (DE)                340 
+##  Author&#39;s Keywords (DE)                336 
 ##  
 ## AUTHORS
-##  Authors                               401 
-##  Author Appearances                    528 
+##  Authors                               397 
+##  Author Appearances                    524 
 ##  Authors of single-authored documents  11 
-##  Authors of multi-authored documents   390 
+##  Authors of multi-authored documents   386 
 ##  
 ## AUTHORS COLLABORATION
 ##  Single-authored documents             12 
 ##  Documents per Author                  0.242 
-##  Authors per Document                  4.13 
-##  Co-Authors per Documents              5.44 
-##  Collaboration Index                   4.59 
+##  Authors per Document                  4.14 
+##  Co-Authors per Documents              5.46 
+##  Collaboration Index                   4.6 
 ##  
 ## 
 ## Annual Scientific Production
@@ -423,7 +423,7 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 ##     2012        3
 ##     2013        5
 ##     2014        9
-##     2015        7
+##     2015        6
 ##     2016        7
 ##     2017       12
 ##     2018       14
@@ -466,16 +466,16 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 ## Corresponding Author&#39;s Countries
 ## 
 ##           Country Articles   Freq SCP MCP MCP_Ratio
-## 1  UNITED KINGDOM       15 0.2239   5  10     0.667
-## 2  FRANCE               14 0.2090   4  10     0.714
-## 3  GERMANY               8 0.1194   3   5     0.625
-## 4  SPAIN                 8 0.1194   4   4     0.500
-## 5  ARGENTINA             7 0.1045   4   3     0.429
-## 6  USA                   5 0.0746   4   1     0.200
-## 7  AUSTRIA               2 0.0299   1   1     0.500
-## 8  CANADA                2 0.0299   1   1     0.500
-## 9  CHILE                 2 0.0299   0   2     1.000
-## 10 BRAZIL                1 0.0149   1   0     0.000
+## 1  UNITED KINGDOM       15 0.2273   5  10     0.667
+## 2  FRANCE               14 0.2121   4  10     0.714
+## 3  GERMANY               8 0.1212   3   5     0.625
+## 4  SPAIN                 8 0.1212   4   4     0.500
+## 5  ARGENTINA             7 0.1061   4   3     0.429
+## 6  USA                   4 0.0606   3   1     0.250
+## 7  AUSTRIA               2 0.0303   1   1     0.500
+## 8  CANADA                2 0.0303   1   1     0.500
+## 9  CHILE                 2 0.0303   0   2     1.000
+## 10 BRAZIL                1 0.0152   1   0     0.000
 ## 
 ## 
 ## SCP: Single Country Publications
@@ -492,7 +492,7 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 ## 4  SPAIN                      146                      18.2
 ## 5  ARGENTINA                  132                      18.9
 ## 6  CANADA                     118                      59.0
-## 7  USA                         87                      17.4
+## 7  USA                         77                      19.2
 ## 8  SOUTH AFRICA                74                      74.0
 ## 9  BRAZIL                      50                      50.0
 ## 10 AUSTRIA                     45                      22.5
@@ -537,33 +537,33 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 <pre><code>## 
 ## SCOPUS DB: Searching local citations (LCS) by document titles (TI) and DOIs...
 ## 
-## Found 46 documents with no empty Local Citations (LCS)</code></pre>
+## Found 45 documents with no empty Local Citations (LCS)</code></pre>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" title="1"><span class="co"># top 10 cited authors in LOCAL network</span></a>
 <a class="sourceLine" id="cb12-2" title="2">CR<span class="op">$</span>Authors[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>,]</a></code></pre></div>
 <pre><code>##                 Author LocalCitations
-## 76        COURTENAY LA             17
+## 74        COURTENAY LA             17
 ## 9           ARAMENDI J             15
-## 138 GONZLEZ-AGUILERA D             15
-## 284        PELLETIER M             15
-## 395         YRAVEDRA J             15
-## 95            DOBNEY K             14
-## 111             EVIN A             14
-## 201           LARSON G             14
-## 231      MAT-GONZLEZ M             14
-## 325           SELDEN J             14</code></pre>
+## 135 GONZLEZ-AGUILERA D             15
+## 280        PELLETIER M             15
+## 391         YRAVEDRA J             15
+## 92            DOBNEY K             14
+## 108             EVIN A             14
+## 198           LARSON G             14
+## 228      MAT-GONZLEZ M             14
+## 321           SELDEN J             14</code></pre>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" title="1"><span class="co"># top 10 cited papers in LOCAL network</span></a>
 <a class="sourceLine" id="cb14-2" title="2">CR<span class="op">$</span>Papers[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>,]</a></code></pre></div>
 <pre><code>##                                     Paper                          DOI Year LCS GCS
-## 89       BUCHANAN B, 2010, J ARCHAEOL SCI    10.1016/J.JAS.2009.09.047 2010  15  71
-## 79       THULMAN DK, 2012, J ARCHAEOL SCI    10.1016/J.JAS.2012.01.004 2012  14  68
-## 90         ARCHER W, 2010, J ARCHAEOL SCI    10.1016/J.JAS.2009.09.033 2010  13  74
-## 96        LYCETT SJ, 2006, J ARCHAEOL SCI    10.1016/J.JAS.2005.10.014 2006  13  78
-## 76        LYCETT SJ, 2013, J ARCHAEOL SCI    10.1016/J.JAS.2012.11.005 2013   9  40
-## 88 CARDILLO M, 2010, LECT NOTES EARTH SCI 10.1007/978-3-540-95853-6_15 2010   8  35
-## 64        OKUMURA M, 2014, J ARCHAEOL SCI    10.1016/J.JAS.2014.02.009 2014   7  50
-## 85       BUCHANAN B, 2011, J ARCHAEOL SCI    10.1016/J.JAS.2010.11.007 2011   6  47
+## 88       BUCHANAN B, 2010, J ARCHAEOL SCI    10.1016/J.JAS.2009.09.047 2010  15  71
+## 78       THULMAN DK, 2012, J ARCHAEOL SCI    10.1016/J.JAS.2012.01.004 2012  14  68
+## 89         ARCHER W, 2010, J ARCHAEOL SCI    10.1016/J.JAS.2009.09.033 2010  13  74
+## 95        LYCETT SJ, 2006, J ARCHAEOL SCI    10.1016/J.JAS.2005.10.014 2006  13  78
+## 75        LYCETT SJ, 2013, J ARCHAEOL SCI    10.1016/J.JAS.2012.11.005 2013   8  40
+## 87 CARDILLO M, 2010, LECT NOTES EARTH SCI 10.1007/978-3-540-95853-6_15 2010   8  35
+## 63        OKUMURA M, 2014, J ARCHAEOL SCI    10.1016/J.JAS.2014.02.009 2014   7  50
+## 84       BUCHANAN B, 2011, J ARCHAEOL SCI    10.1016/J.JAS.2010.11.007 2011   6  47
 ## 57               ARCHER W, 2015, PLOS ONE 10.1371/JOURNAL.PONE.0132428 2015   4  23
-## 67           OWEN J, 2014, J ARCHAEOL SCI    10.1016/J.JAS.2013.12.010 2014   4  28</code></pre>
+## 66           OWEN J, 2014, J ARCHAEOL SCI    10.1016/J.JAS.2013.12.010 2014   4  28</code></pre>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" title="1"><span class="co"># top authors&#39; productivity over time</span></a>
 <a class="sourceLine" id="cb16-2" title="2">topAU &lt;-<span class="st"> </span><span class="kw">authorProdOverTime</span>(df, <span class="dt">k =</span> <span class="dv">10</span>, <span class="dt">graph =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
 <p><img src="gmbib_files/figure-html/net.attr-1.png" width="100%" /></p>
@@ -700,8 +700,8 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 <h3><span class="header-section-number">3.1.3</span> Sankey diagram</h3>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">threeFieldsPlot</span>(df, <span class="dt">fields =</span> <span class="kw">c</span>(<span class="st">&quot;AU&quot;</span>, <span class="st">&quot;DE&quot;</span>, <span class="st">&quot;SO&quot;</span>), <span class="dt">n =</span> <span class="kw">c</span>(<span class="dv">20</span>,<span class="dv">20</span>,<span class="dv">20</span>), <span class="dt">width =</span> <span class="dv">800</span>, <span class="dt">height =</span> <span class="dv">800</span>)</a></code></pre></div>
 <div class="figure">
-<div id="htmlwidget-81befc33ecc0d0179228" style="width:800px;height:800px;" class="sankeyNetwork html-widget"></div>
-<script type="application/json" data-for="htmlwidget-81befc33ecc0d0179228">{"x":{"links":{"source":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,1,2,3,4,6,9,12,16,17,0,5,7,9,11,0,5,7,11,1,2,3,4,6,12,14,9,18,5,8,19,8,13,19,8,13,19,1,2,3,4,6,12,1,2,3,4,6,12,0,9,16,17,0,9,9,16,17,0,5,0,7,20,21,22,23,24,25,26,27,28,29,35,37,38,39,20,34,36,20,25,35,20,21,24,30,20,27,28,29,33,34,20,21,24,30,31,24,25,35,20,23,38,20,21,20,28,20,20,20,20,23,26,27,28,20,32],"target":[20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21,21,22,22,22,22,22,23,23,23,23,24,24,24,24,24,24,24,25,25,26,27,27,28,28,28,29,29,29,30,30,30,30,30,30,31,31,31,31,31,31,33,33,33,33,34,34,37,37,37,38,38,39,39,40,40,40,40,40,40,40,40,40,40,40,40,40,40,41,41,41,42,42,42,43,43,43,43,44,44,44,44,44,44,46,46,46,46,46,47,47,47,48,48,49,50,50,51,51,53,55,56,57,57,57,58,58,59,59],"value":[4,4,4,3,4,2,1,2,4,4,2,2,2,3,2,2,2,2,3,6,6,5,6,3,1,3,1,1,4,1,2,1,1,1,2,2,2,4,4,4,4,2,2,1,1,2,1,1,1,1,1,1,2,1,2,3,3,2,2,2,1,3,3,2,2,1,2,2,2,1,1,1,1,3,1,1,2,1,2,1,12,1,6,2,1,2,3,2,1,3,1,3,1,1,6,1,2,1,2,1,1,2,2,1,2,1,1,1,2,1,3,1,1,1,1,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,1,1,1,1,1],"group":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]},"nodes":{"name":["cucchi t","yravedra j","gonzlez-aguilera d","courtenay la","aramendi j","evin a","mat-gonzlez m","dobney k","buchanan b","cornette r","gunz p","larson g","domnguez-rodrigo m","o'brien mj","archer w","charlin j","stoetzel e","denys c","von cramon-taubadel n","collard m","geometric morphometrics","taphonomy","zooarchaeology","archaeology","experimental archaeology","3d geometric morphometrics","archaeobotany","paleoindian","typology","projectile points","raw materials","cut marks","3d","holocene","mandible","bioarchaeology","homo sapiens","species identification","geometric morphometric","teeth","journal of archaeological science","journal of human evolution","american journal of physical anthropology","quaternary international","quaternary science reviews","","archaeological and anthropological sciences","journal of archaeological science: reports","proceedings of the royal society b: biological sciences","biological journal of the linnean society","palaeogeography, palaeoclimatology, palaeoecology","american antiquity","","international journal of legal medicine","","anatomical record","international journal of nautical archaeology","journal of archaeological method and theory","paleoamerica","journal of cultural heritage"],"group":["cucchi t","yravedra j","gonzlez-aguilera d","courtenay la","aramendi j","evin a","mat-gonzlez m","dobney k","buchanan b","cornette r","gunz p","larson g","domnguez-rodrigo m","o'brien mj","archer w","charlin j","stoetzel e","denys c","von cramon-taubadel n","collard m","geometric morphometrics","taphonomy","zooarchaeology","archaeology","experimental archaeology","3d geometric morphometrics","archaeobotany","paleoindian","typology","projectile points","raw materials","cut marks","3d","holocene","mandible","bioarchaeology","homo sapiens","species identification","geometric morphometric","teeth","journal of archaeological science","journal of human evolution","american journal of physical anthropology","quaternary international","quaternary science reviews","","archaeological and anthropological sciences","journal of archaeological science: reports","proceedings of the royal society b: biological sciences","biological journal of the linnean society","palaeogeography, palaeoclimatology, palaeoecology","american antiquity","","international journal of legal medicine","","anatomical record","international journal of nautical archaeology","journal of archaeological method and theory","paleoamerica","journal of cultural heritage"]},"options":{"NodeID":"Nodes","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":12,"fontFamily":null,"nodeWidth":30,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-96c259effa4aa82109ab" style="width:800px;height:800px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-96c259effa4aa82109ab">{"x":{"links":{"source":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,1,2,3,4,6,9,12,16,17,0,5,7,9,11,0,5,7,11,1,2,3,4,6,12,14,9,18,5,8,19,8,13,19,8,13,19,1,2,3,4,6,12,1,2,3,4,6,12,0,9,16,17,0,9,9,16,17,0,5,0,7,20,21,22,23,24,25,26,27,28,29,35,37,38,39,20,34,36,20,25,35,20,21,24,30,20,27,28,29,33,34,20,21,24,30,31,24,25,35,20,23,38,20,21,20,28,20,20,20,20,23,26,27,28,20,32],"target":[20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,21,21,21,21,21,21,21,21,21,22,22,22,22,22,23,23,23,23,24,24,24,24,24,24,24,25,25,26,27,27,28,28,28,29,29,29,30,30,30,30,30,30,31,31,31,31,31,31,33,33,33,33,34,34,37,37,37,38,38,39,39,40,40,40,40,40,40,40,40,40,40,40,40,40,40,41,41,41,42,42,42,43,43,43,43,44,44,44,44,44,44,46,46,46,46,46,47,47,47,48,48,49,50,50,51,51,53,55,56,57,57,57,58,58,59,59],"value":[4,4,4,3,4,2,1,2,4,4,2,2,2,3,2,2,2,2,3,6,6,5,6,3,1,3,1,1,4,1,2,1,1,1,2,2,2,4,4,4,4,2,2,1,1,2,1,1,1,1,1,1,2,1,2,3,3,2,2,2,1,3,3,2,2,1,2,2,2,1,1,1,1,3,1,1,2,1,2,1,12,1,6,2,1,2,3,2,1,3,1,3,1,1,6,1,2,1,2,1,1,2,2,1,2,1,1,1,2,1,3,1,1,1,1,1,1,1,2,1,1,1,2,1,1,2,2,1,1,1,1,1,1,1,1],"group":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]},"nodes":{"name":["cucchi t","yravedra j","gonzlez-aguilera d","courtenay la","aramendi j","evin a","mat-gonzlez m","dobney k","buchanan b","cornette r","gunz p","larson g","domnguez-rodrigo m","o'brien mj","archer w","charlin j","stoetzel e","denys c","von cramon-taubadel n","collard m","geometric morphometrics","taphonomy","zooarchaeology","archaeology","experimental archaeology","3d geometric morphometrics","archaeobotany","paleoindian","typology","projectile points","raw materials","cut marks","3d","holocene","mandible","bioarchaeology","homo sapiens","species identification","geometric morphometric","teeth","journal of archaeological science","journal of human evolution","american journal of physical anthropology","quaternary international","quaternary science reviews","","archaeological and anthropological sciences","journal of archaeological science: reports","proceedings of the royal society b: biological sciences","biological journal of the linnean society","palaeogeography, palaeoclimatology, palaeoecology","american antiquity","","international journal of legal medicine","","anatomical record","international journal of nautical archaeology","journal of archaeological method and theory","paleoamerica","journal of cultural heritage"],"group":["cucchi t","yravedra j","gonzlez-aguilera d","courtenay la","aramendi j","evin a","mat-gonzlez m","dobney k","buchanan b","cornette r","gunz p","larson g","domnguez-rodrigo m","o'brien mj","archer w","charlin j","stoetzel e","denys c","von cramon-taubadel n","collard m","geometric morphometrics","taphonomy","zooarchaeology","archaeology","experimental archaeology","3d geometric morphometrics","archaeobotany","paleoindian","typology","projectile points","raw materials","cut marks","3d","holocene","mandible","bioarchaeology","homo sapiens","species identification","geometric morphometric","teeth","journal of archaeological science","journal of human evolution","american journal of physical anthropology","quaternary international","quaternary science reviews","","archaeological and anthropological sciences","journal of archaeological science: reports","proceedings of the royal society b: biological sciences","biological journal of the linnean society","palaeogeography, palaeoclimatology, palaeoecology","american antiquity","","international journal of legal medicine","","anatomical record","international journal of nautical archaeology","journal of archaeological method and theory","paleoamerica","journal of cultural heritage"]},"options":{"NodeID":"Nodes","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":12,"fontFamily":null,"nodeWidth":30,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 (#fig:3.flds)Interactive Sankey diagram of three fields (authors, keywords, and journals) illustrating relationships.
 </p>
@@ -715,27 +715,27 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" title="1"><span class="co"># most cited references in global network</span></a>
 <a class="sourceLine" id="cb21-2" title="2">mcr &lt;-<span class="st"> </span><span class="kw">citations</span>(df, <span class="dt">field =</span> <span class="st">&quot;article&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;;&quot;</span>)</a>
 <a class="sourceLine" id="cb21-3" title="3"><span class="kw">cbind</span>(mcr<span class="op">$</span>Cited[<span class="dv">1</span><span class="op">:</span><span class="dv">20</span>])</a></code></pre></div>
-<pre><code>##                                                                                                                                                                                                                                       [,1]
-## BUCHANAN, B., COLLARD, M., A GEOMETRIC MORPHOMETRICS-BASED ASSESSMENT OF BLADE SHAPE DIFFERENCES AMONG PALEOINDIAN PROJECTILE POINT TYPES FROM WESTERN NORTH AMERICA (2010) J. ARCHAEOL. SCI., 37, PP. 350-359                           8
-## MITTEROECKER, P., GUNZ, P., ADVANCES IN GEOMETRIC MORPHOMETRICS (2009) EVOL. BIOL., 36, PP. 235-247                                                                                                                                      8
-## BOOKSTEIN, F.L., (1991) MORPHOMETRIC TOOLS FOR LANDMARK DATA: GEOMETRY AND BIOLOGY, , CAMBRIDGE UNIVERSITY PRESS, CAMBRIDGE                                                                                                              7
-## BOOKSTEIN, F.L., MORPHOMETRIC TOOLS FOR LANDMARK DATA: GEOMETRY AND BIOLOGY (1991), CAMBRIDGE UNIVERSITY PRESS CAMBRIDGE                                                                                                                 7
-## KLINGENBERG, C.P., MORPHOJ: AN INTEGRATED SOFTWARE PACKAGE FOR GEOMETRIC MORPHOMETRICS (2011) MOL. ECOL. RESOUR., 11, PP. 353-357                                                                                                        7
-## KLINGENBERG, C.P., MORPHOJ: AN INTEGRATED SOFTWARE PACKAGE FOR GEOMETRIC MORPHOMETRICS (2011) MOLECULAR ECOLOGY RESOURCES, 11, PP. 353-357                                                                                               6
-## ARCHER, W., BRAUN, D.R., VARIABILITY IN BIFACIAL TECHNOLOGY AT ELANDSFONTEIN, WESTERN CAPE, SOUTH AFRICA: A GEOMETRIC MORPHOMETRIC APPROACH (2010) JOURNAL OF ARCHAEOLOGICAL SCIENCE, 37, PP. 201-209                                    5
-## BUCHANAN, B., COLLARD, M., HAMILTON, M.J., O&#39;BRIEN, M.J., POINTS AND PREY: A QUANTITATIVE TEST OF THE HYPOTHESIS THAT PREY SIZE INFLUENCES EARLY PALEOINDIAN PROJECTILE POINT FORM (2011) J. ARCHAEOL. SCI., 38, PP. 852-864             5
-## CUCCHI, T., HULME-BEAMAN, A., YUAN, J., DOBNEY, K., EARLY NEOLITHIC PIG DOMESTICATION AT JIAHU, HENAN PROVINCE, CHINA: CLUES FROM MOLAR SHAPE ANALYSES USING GEOMETRIC MORPHOMETRIC APPROACHES (2011) J.ARCHAEOL. SCI., 38, PP. 11-22    5
-## DRYDEN, I.L., MARDIA, K.V., STATISTICAL SHAPE ANALYSIS (1998), JOHN WILEY &amp; SONS CHICHESTER                                                                                                                                              5
-## GOWER, J.C., GENERALIZED PROCRUSTES ANALYSIS (1975) PSYCHOMETRIKA, 40, PP. 33-51                                                                                                                                                         5
-## MITTEROECKER, P., GUNZ, P., ADVANCES IN GEOMETRIC MORPHOMETRICS (2009) EVOLUTIONARY BIOLOGY, 36, PP. 235-247                                                                                                                             5
-## ROHLF, F.J., SHAPE STATISTICS: PROCRUSTES SUPERIMPOSITIONS AND TANGENT SPACES (1999) J. CLASSIF., 16, PP. 197-223                                                                                                                        5
-## ROHLF, F.J., SLICE, D., EXTENSIONS OF THE PROCRUSTES METHOD FOR THE OPTIMAL SUPERIMPOSITION OF LANDMARKS (1990) SYST. BIOL., 39, PP. 40-59                                                                                               5
-## ROHLF, F.J., SLICE, D.E., EXTENSIONS OF THE PROCRUSTES METHOD FOR THE OPTIMAL SUPERIMPOSITION OF LANDMARKS (1990) SYST. ZOOL., 39, PP. 40-59                                                                                             5
-## SLICE, D.E., GEOMETRIC MORPHOMETRICS (2007) ANNU. REV. ANTHROPOL., 36, PP. 261-281                                                                                                                                                       5
-## SLICE, D.E., GEOMETRIC MORPHOMETRICS (2007) ANNUAL REVIEW OF ANTHROPOLOGY, 36, PP. 261-281                                                                                                                                               5
-## SLICE, D.E., LANDMARK COORDINATES ALIGNED BY PROCRUSTES ANALYSIS DO NOT LIE IN KENDALL&#39;S SHAPE SPACE (2001) SYST. BIOL., 50 (1), PP. 141-149                                                                                             5
-## ADAMS, D.C., ROHLF, F.J., SLICE, D.E., A FIELD COMES OF AGE: GEOMETRIC MORPHOMETRICS IN THE 21ST CENTURY (2013) HYSTRIX, 24, PP. 7-14                                                                                                    4
-## BOOKSTEIN, F.L., (1991) MORPHOMETRIC TOOLS FOR LANDMARK DATA: GEOMETRY AND BIOLOGY, , CAMBRIDGE: CAMBRIDGE UNIVERSITY PRESS                                                                                                              4</code></pre>
+<pre><code>##                                                                                                                                                                                                                              [,1]
+## BUCHANAN, B., COLLARD, M., A GEOMETRIC MORPHOMETRICS-BASED ASSESSMENT OF BLADE SHAPE DIFFERENCES AMONG PALEOINDIAN PROJECTILE POINT TYPES FROM WESTERN NORTH AMERICA (2010) J. ARCHAEOL. SCI., 37, PP. 350-359                  8
+## MITTEROECKER, P., GUNZ, P., ADVANCES IN GEOMETRIC MORPHOMETRICS (2009) EVOL. BIOL., 36, PP. 235-247                                                                                                                             8
+## BOOKSTEIN, F.L., (1991) MORPHOMETRIC TOOLS FOR LANDMARK DATA: GEOMETRY AND BIOLOGY, , CAMBRIDGE UNIVERSITY PRESS, CAMBRIDGE                                                                                                     7
+## BOOKSTEIN, F.L., MORPHOMETRIC TOOLS FOR LANDMARK DATA: GEOMETRY AND BIOLOGY (1991), CAMBRIDGE UNIVERSITY PRESS CAMBRIDGE                                                                                                        7
+## KLINGENBERG, C.P., MORPHOJ: AN INTEGRATED SOFTWARE PACKAGE FOR GEOMETRIC MORPHOMETRICS (2011) MOL. ECOL. RESOUR., 11, PP. 353-357                                                                                               7
+## ARCHER, W., BRAUN, D.R., VARIABILITY IN BIFACIAL TECHNOLOGY AT ELANDSFONTEIN, WESTERN CAPE, SOUTH AFRICA: A GEOMETRIC MORPHOMETRIC APPROACH (2010) JOURNAL OF ARCHAEOLOGICAL SCIENCE, 37, PP. 201-209                           5
+## BUCHANAN, B., COLLARD, M., HAMILTON, M.J., O&#39;BRIEN, M.J., POINTS AND PREY: A QUANTITATIVE TEST OF THE HYPOTHESIS THAT PREY SIZE INFLUENCES EARLY PALEOINDIAN PROJECTILE POINT FORM (2011) J. ARCHAEOL. SCI., 38, PP. 852-864    5
+## DRYDEN, I.L., MARDIA, K.V., STATISTICAL SHAPE ANALYSIS (1998), JOHN WILEY &amp; SONS CHICHESTER                                                                                                                                     5
+## GOWER, J.C., GENERALIZED PROCRUSTES ANALYSIS (1975) PSYCHOMETRIKA, 40, PP. 33-51                                                                                                                                                5
+## KLINGENBERG, C.P., MORPHOJ: AN INTEGRATED SOFTWARE PACKAGE FOR GEOMETRIC MORPHOMETRICS (2011) MOLECULAR ECOLOGY RESOURCES, 11, PP. 353-357                                                                                      5
+## MITTEROECKER, P., GUNZ, P., ADVANCES IN GEOMETRIC MORPHOMETRICS (2009) EVOLUTIONARY BIOLOGY, 36, PP. 235-247                                                                                                                    5
+## ROHLF, F.J., SHAPE STATISTICS: PROCRUSTES SUPERIMPOSITIONS AND TANGENT SPACES (1999) J. CLASSIF., 16, PP. 197-223                                                                                                               5
+## ROHLF, F.J., SLICE, D., EXTENSIONS OF THE PROCRUSTES METHOD FOR THE OPTIMAL SUPERIMPOSITION OF LANDMARKS (1990) SYST. BIOL., 39, PP. 40-59                                                                                      5
+## ROHLF, F.J., SLICE, D.E., EXTENSIONS OF THE PROCRUSTES METHOD FOR THE OPTIMAL SUPERIMPOSITION OF LANDMARKS (1990) SYST. ZOOL., 39, PP. 40-59                                                                                    5
+## SLICE, D.E., GEOMETRIC MORPHOMETRICS (2007) ANNU. REV. ANTHROPOL., 36, PP. 261-281                                                                                                                                              5
+## SLICE, D.E., GEOMETRIC MORPHOMETRICS (2007) ANNUAL REVIEW OF ANTHROPOLOGY, 36, PP. 261-281                                                                                                                                      5
+## SLICE, D.E., LANDMARK COORDINATES ALIGNED BY PROCRUSTES ANALYSIS DO NOT LIE IN KENDALL&#39;S SHAPE SPACE (2001) SYST. BIOL., 50 (1), PP. 141-149                                                                                    5
+## ADAMS, D.C., ROHLF, F.J., SLICE, D.E., A FIELD COMES OF AGE: GEOMETRIC MORPHOMETRICS IN THE 21ST CENTURY (2013) HYSTRIX, 24, PP. 7-14                                                                                           4
+## BOOKSTEIN, F.L., (1991) MORPHOMETRIC TOOLS FOR LANDMARK DATA: GEOMETRY AND BIOLOGY, , CAMBRIDGE: CAMBRIDGE UNIVERSITY PRESS                                                                                                     4
+## BOOKSTEIN, F.L., LANDMARK METHODS FOR FORMS WITHOUT LANDMARKS: MORPHOMETRICS OF GROUP DIFFERENCES IN OUTLINE SHAPE (1997) MED. IMAGE ANAL., 1, PP. 225-243                                                                      4</code></pre>
 </div>
 <div id="most-cited-authors" class="section level3">
 <h3><span class="header-section-number">3.2.2</span> Most cited authors</h3>
@@ -749,9 +749,9 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 ## GUNZ P                 147
 ## YRAVEDRA J             133
 ## BUCHANAN B             112
-## LYCETT S J             111
-## VON CRAMON TAUBADEL N   99
+## LYCETT S J             109
 ## SLICE D E               97
+## VON CRAMON TAUBADEL N   97
 ## O HIGGINS P             90
 ## MITTEROECKER P          87
 ## COLLARD M               86
@@ -761,8 +761,8 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 ## GONZLEZ AGUILERA D      70
 ## O BRIEN M J             70
 ## ADAMS D C               68
-## KLINGENBERG C P         67
-## HARVATI K               66</code></pre>
+## HARVATI K               66
+## KLINGENBERG C P         66</code></pre>
 </div>
 <div id="author-dominance-ranking" class="section level3">
 <h3><span class="header-section-number">3.2.3</span> Author dominance ranking</h3>
@@ -809,12 +809,12 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 ## 
 ## Main statistics about the network
 ## 
-##  Size                                  6825 
+##  Size                                  6809 
 ##  Density                               0.018 
-##  Transitivity                          0.642 
+##  Transitivity                          0.643 
 ##  Diameter                              5 
-##  Degree Centralization                 0.277 
-##  Average path length                   2.561 
+##  Degree Centralization                 0.278 
+##  Average path length                   2.56 
 ## </code></pre>
 </div>
 </div>
@@ -826,7 +826,7 @@ This volume is in <b><a href="open.html#open">Open Review</a></b>. I want your f
 <pre><code>## 
 ## SCOPUS DB: Searching local citations (LCS) by document titles (TI) and DOIs...
 ## 
-## Found 42 documents with no empty Local Citations (LCS)</code></pre>
+## Found 41 documents with no empty Local Citations (LCS)</code></pre>
 <div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" title="1"><span class="co"># plot historical co-citation network</span></a>
 <a class="sourceLine" id="cb32-2" title="2">hnet &lt;-<span class="st"> </span><span class="kw">histPlot</span>(histResults, <span class="dt">n =</span> <span class="dv">50</span>, <span class="dt">size =</span> <span class="dv">4</span>, <span class="dt">labelsize =</span> <span class="dv">2</span>)</a></code></pre></div>
 <div class="figure"><span id="fig:hdcn"></span>
@@ -855,44 +855,43 @@ Figure 3.1: The historiographic map is a chronological network map of the most r
 ## 20                          FREIDLINE SE, 2012, J HUM EVOL     10.1016/J.JHEVOL.2011.11.005 2012
 ## 21                        KRAUSE-KYORA B, 2013, NAT COMMUN               10.1038/NCOMMS3348 2013
 ## 22                                 SENCK S, 2013, ANAT REC                 10.1002/AR.22693 2013
-## 23                         CUCCHI T, 2013, BIOL J LINN SOC                10.1111/BIJ.12004 2013
+## 24                         LYCETT SJ, 2013, J ARCHAEOL SCI        10.1016/J.JAS.2012.11.005 2013
 ## 25                                DTROIT F, 2013, HUM BIOL             10.3378/027.085.0303 2013
-## 26                         OKUMURA M, 2014, J ARCHAEOL SCI        10.1016/J.JAS.2014.02.009 2014
+## 27                         CHARLIN J, 2014, WORLD ARCHAEOL     10.1080/00438243.2014.890914 2014
 ## 28                                 PICIN A, 2014, QUAT INT     10.1016/J.QUAINT.2014.05.004 2014
 ## 29                            OWEN J, 2014, J ARCHAEOL SCI        10.1016/J.JAS.2013.12.010 2014
 ## 30                    NOVA DELGADO M, 2014, FOLIA PRIMATOL                10.1159/000371633 2014
 ## 31                             ROS J, 2014, J ARCHAEOL SCI        10.1016/J.JAS.2013.09.015 2014
 ## 32                         WILCZEK J, 2014, J ARCHAEOL SCI        10.1016/J.JAS.2014.05.033 2014
 ## 33                            EVIN A, 2014, J ARCHAEOL SCI        10.1016/J.JAS.2013.11.033 2014
-## 34                          SEETAH K, 2014, J ARCHAEOL SCI        10.1016/J.JAS.2013.10.022 2014
-## 43                    FIELD JH, 2016, J ANTHROPOL ARCHAEOL        10.1016/J.JAA.2016.07.007 2016
-## 44                       KUBICKA AM, 2016, AM J HUMAN BIOL               10.1002/AJHB.22873 2016
-## 45                 FERROS I, 2016, ORTHODONT CRANIOFAC RES                10.1111/OCR.12128 2016
-## 46                              ARCHER W, 2016, J HUM EVOL     10.1016/J.JHEVOL.2016.05.007 2016
-## 47                        GUILLAUD E, 2016, J ARCHAEOL SCI        10.1016/J.JAS.2015.11.010 2016
-## 48                      PASCHETTA C, 2016, AM J HUMAN BIOL               10.1002/AJHB.22746 2016
-## 49 ARAMENDI J, 2017, PALAEOGEOGR PALAEOCLIMATOL PALAEOECOL     10.1016/J.PALAEO.2017.05.021 2017
-## 50                                 WOODS C, 2017, PLOS ONE     10.1371/JOURNAL.PONE.0186754 2017
-## 51                  SMITH HL, 2017, ARCHAEOL ANTHROPOL SCI        10.1007/S12520-016-0335-Y 2017
-## 52                          ESTVEZ EJ, 2017, INT J LEG MED        10.1007/S00414-017-1659-6 2017
-## 53                               CORNY J, 2017, J HUM EVOL     10.1016/J.JHEVOL.2017.08.017 2017
-## 54                        BONHOMME V, 2017, J ARCHAEOL SCI        10.1016/J.JAS.2017.09.010 2017
-## 55                  HERZLINGER G, 2017, J ARCHAEOL SCI REP     10.1016/J.JASREP.2017.05.013 2017
-## 56                  ERRICKSON D, 2017, INT J OSTEOARCHAEOL                  10.1002/OA.2587 2017
-## 57                          STOETZEL E, 2017, QUAT SCI REV  10.1016/J.QUASCIREV.2017.04.002 2017
-## 58                          NELSON E, 2017, J ARCHAEOL SCI        10.1016/J.JAS.2016.11.001 2017
-## 59                           HANOT P, 2017, J ARCHAEOL SCI        10.1016/J.JAS.2016.12.002 2017
-## 60                         MRQUEZ F, 2017, MAR POLLUT BULL  10.1016/J.MARPOLBUL.2016.11.018 2017
-## 61                           MACLEOD N, 2018, QUAT SCI REV  10.1016/J.QUASCIREV.2018.08.024 2018
-## 62                         PRESNYAKOVA D, 2018, J HUM EVOL     10.1016/J.JHEVOL.2018.07.008 2018
-## 63                          LIMIER B, 2018, J ARCHAEOL SCI        10.1016/J.JAS.2018.10.001 2018
-## 64                            HERZLINGER G, 2018, PLOS ONE     10.1371/JOURNAL.PONE.0207890 2018
-## 65                   SAMPER CARRO SC, 2018, J ARCHAEOL SCI        10.1016/J.JAS.2018.09.010 2018
-## 66                              BUCHANAN B, 2018, AM ANTIQ              10.1017/AAQ.2018.53 2018
-## 67         SELDEN RZ, 2018, DIGIT APPL ARCHAEOL CULT HERIT      10.1016/J.DAACH.2018.E00080 2018
-## 68                             MOUNIER A, 2018, J HUM EVOL     10.1016/J.JHEVOL.2018.04.013 2018
-## 69                             ROFES J, 2018, QUAT SCI REV  10.1016/J.QUASCIREV.2018.04.016 2018
-## 70                       MAT-GONZLEZ M, 2018, ARCHAEOMETRY               10.1111/ARCM.12327 2018
+## 42                    FIELD JH, 2016, J ANTHROPOL ARCHAEOL        10.1016/J.JAA.2016.07.007 2016
+## 43                       KUBICKA AM, 2016, AM J HUMAN BIOL               10.1002/AJHB.22873 2016
+## 44                 FERROS I, 2016, ORTHODONT CRANIOFAC RES                10.1111/OCR.12128 2016
+## 45                              ARCHER W, 2016, J HUM EVOL     10.1016/J.JHEVOL.2016.05.007 2016
+## 46                        GUILLAUD E, 2016, J ARCHAEOL SCI        10.1016/J.JAS.2015.11.010 2016
+## 47                      PASCHETTA C, 2016, AM J HUMAN BIOL               10.1002/AJHB.22746 2016
+## 48 ARAMENDI J, 2017, PALAEOGEOGR PALAEOCLIMATOL PALAEOECOL     10.1016/J.PALAEO.2017.05.021 2017
+## 49                                 WOODS C, 2017, PLOS ONE     10.1371/JOURNAL.PONE.0186754 2017
+## 50                  SMITH HL, 2017, ARCHAEOL ANTHROPOL SCI        10.1007/S12520-016-0335-Y 2017
+## 51                          ESTVEZ EJ, 2017, INT J LEG MED        10.1007/S00414-017-1659-6 2017
+## 52                               CORNY J, 2017, J HUM EVOL     10.1016/J.JHEVOL.2017.08.017 2017
+## 53                        BONHOMME V, 2017, J ARCHAEOL SCI        10.1016/J.JAS.2017.09.010 2017
+## 54                  HERZLINGER G, 2017, J ARCHAEOL SCI REP     10.1016/J.JASREP.2017.05.013 2017
+## 55                  ERRICKSON D, 2017, INT J OSTEOARCHAEOL                  10.1002/OA.2587 2017
+## 56                          STOETZEL E, 2017, QUAT SCI REV  10.1016/J.QUASCIREV.2017.04.002 2017
+## 57                          NELSON E, 2017, J ARCHAEOL SCI        10.1016/J.JAS.2016.11.001 2017
+## 58                           HANOT P, 2017, J ARCHAEOL SCI        10.1016/J.JAS.2016.12.002 2017
+## 59                         MRQUEZ F, 2017, MAR POLLUT BULL  10.1016/J.MARPOLBUL.2016.11.018 2017
+## 60                           MACLEOD N, 2018, QUAT SCI REV  10.1016/J.QUASCIREV.2018.08.024 2018
+## 61                         PRESNYAKOVA D, 2018, J HUM EVOL     10.1016/J.JHEVOL.2018.07.008 2018
+## 62                          LIMIER B, 2018, J ARCHAEOL SCI        10.1016/J.JAS.2018.10.001 2018
+## 63                            HERZLINGER G, 2018, PLOS ONE     10.1371/JOURNAL.PONE.0207890 2018
+## 64                   SAMPER CARRO SC, 2018, J ARCHAEOL SCI        10.1016/J.JAS.2018.09.010 2018
+## 65                              BUCHANAN B, 2018, AM ANTIQ              10.1017/AAQ.2018.53 2018
+## 66         SELDEN RZ, 2018, DIGIT APPL ARCHAEOL CULT HERIT      10.1016/J.DAACH.2018.E00080 2018
+## 67                             MOUNIER A, 2018, J HUM EVOL     10.1016/J.JHEVOL.2018.04.013 2018
+## 68                             ROFES J, 2018, QUAT SCI REV  10.1016/J.QUASCIREV.2018.04.016 2018
+## 69                       MAT-GONZLEZ M, 2018, ARCHAEOMETRY               10.1111/ARCM.12327 2018
 ##    LCS GCS
 ## 1    4 146
 ## 2   13  78
@@ -910,44 +909,43 @@ Figure 3.1: The historiographic map is a chronological network map of the most r
 ## 20   1  35
 ## 21   0  55
 ## 22   1  11
-## 23   1  20
+## 24   8  40
 ## 25   1  23
-## 26   7  50
+## 27   3  17
 ## 28   3  19
 ## 29   4  28
 ## 30   0   4
 ## 31   0  23
 ## 32   0  12
 ## 33   0  20
-## 34   1  18
-## 43   0   9
-## 44   0   3
-## 45   0   4
-## 46   2  16
-## 47   0   7
-## 48   0   4
-## 49   0  31
-## 50   0   4
-## 51   1   7
-## 52   0   3
-## 53   0   8
-## 54   1   9
-## 55   1   8
-## 56   0   7
-## 57   1   6
-## 58   2   8
-## 59   0   9
-## 60   0  15
-## 61   2   6
-## 62   0   6
-## 63   0   2
-## 64   0   3
-## 65   0   1
-## 66   0   2
+## 42   0   9
+## 43   0   3
+## 44   0   4
+## 45   2  16
+## 46   0   7
+## 47   0   4
+## 48   0  31
+## 49   0   4
+## 50   1   7
+## 51   0   3
+## 52   0   8
+## 53   1   9
+## 54   1   8
+## 55   0   7
+## 56   1   6
+## 57   2   8
+## 58   0   9
+## 59   0  15
+## 60   2   6
+## 61   0   6
+## 62   0   2
+## 63   0   3
+## 64   0   1
+## 65   0   2
+## 66   0   1
 ## 67   0   1
-## 68   0   1
-## 69   0   2
-## 70   1  18</code></pre>
+## 68   0   2
+## 69   1  18</code></pre>
 <div id="field-tag-distribution-by-year" class="section level3">
 <h3><span class="header-section-number">3.4.1</span> Field tag distribution by year</h3>
 <div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" title="1">timespan =<span class="st"> </span><span class="kw">c</span>(<span class="dv">2005</span>, <span class="dv">2010</span>, <span class="dv">2015</span>)</a>
@@ -1071,8 +1069,8 @@ Figure 3.1: The historiographic map is a chronological network map of the most r
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb46-1" title="1"><span class="co"># keyword thematic evolution</span></a>
 <a class="sourceLine" id="cb46-2" title="2">nexus &lt;-<span class="st"> </span><span class="kw">thematicEvolution</span>(df, <span class="dt">field =</span> <span class="st">&quot;DE&quot;</span>, <span class="dt">years =</span> <span class="kw">c</span>(<span class="dv">2010</span>,<span class="dv">2013</span>,<span class="dv">2017</span>), <span class="dt">n =</span> <span class="dv">2000</span>, <span class="dt">minFreq =</span> <span class="dv">2</span>, <span class="dt">size =</span> <span class="fl">0.8</span>, <span class="dt">n.labels =</span> <span class="dv">1</span>, <span class="dt">repel =</span> <span class="ot">TRUE</span>)</a>
 <a class="sourceLine" id="cb46-3" title="3"><span class="kw">plotThematicEvolution</span>(nexus<span class="op">$</span>Nodes, nexus<span class="op">$</span>Edges)</a></code></pre></div>
-<div id="htmlwidget-ec8274f4fc3f9060a230" style="width:900px;height:1500px;" class="sankeyNetwork html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ec8274f4fc3f9060a230">{"x":{"links":{"source":[0,1,2,3,4,5,5,6],"target":[1,4,7,7,8,9,10,11],"value":[100,100,50,100,25,100,33.3333333333333,100],"group":["geometric morphometrics--2002-2010","geometric morphometrics--2011-2013","archaeobotany--2014-2017","archaeology--2014-2017","geometric morphometrics--2014-2017","species identification--2014-2017","species identification--2014-2017","zooarchaeology--2014-2017"]},"nodes":{"name":["geometric morphometrics--2002-2010","geometric morphometrics--2011-2013","archaeobotany--2014-2017","archaeology--2014-2017","geometric morphometrics--2014-2017","species identification--2014-2017","zooarchaeology--2014-2017","archaeology--2018-2020","geometric morphometrics--2018-2020","3d geometric morphometrics--2018-2020","taphonomy--2018-2020","zooarchaeology--2018-2020"],"group":["geometric morphometrics--2002-2010","geometric morphometrics--2011-2013","archaeobotany--2014-2017","archaeology--2014-2017","geometric morphometrics--2014-2017","species identification--2014-2017","zooarchaeology--2014-2017","archaeology--2018-2020","geometric morphometrics--2018-2020","3d geometric morphometrics--2018-2020","taphonomy--2018-2020","zooarchaeology--2018-2020"]},"options":{"NodeID":"name","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":12,"fontFamily":null,"nodeWidth":30,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0b0c8c65d9553984d2fd" style="width:900px;height:1500px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0b0c8c65d9553984d2fd">{"x":{"links":{"source":[0,1,2,3,4,5,5,6],"target":[1,4,7,7,8,9,10,11],"value":[100,100,50,100,25,100,33.3333333333333,100],"group":["geometric morphometrics--2002-2010","geometric morphometrics--2011-2013","archaeobotany--2014-2017","archaeology--2014-2017","geometric morphometrics--2014-2017","species identification--2014-2017","species identification--2014-2017","zooarchaeology--2014-2017"]},"nodes":{"name":["geometric morphometrics--2002-2010","geometric morphometrics--2011-2013","archaeobotany--2014-2017","archaeology--2014-2017","geometric morphometrics--2014-2017","species identification--2014-2017","zooarchaeology--2014-2017","archaeology--2018-2020","geometric morphometrics--2018-2020","3d geometric morphometrics--2018-2020","taphonomy--2018-2020","zooarchaeology--2018-2020"],"group":["geometric morphometrics--2002-2010","geometric morphometrics--2011-2013","archaeobotany--2014-2017","archaeology--2014-2017","geometric morphometrics--2014-2017","species identification--2014-2017","zooarchaeology--2014-2017","archaeology--2018-2020","geometric morphometrics--2018-2020","3d geometric morphometrics--2018-2020","taphonomy--2018-2020","zooarchaeology--2018-2020"]},"options":{"NodeID":"name","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":12,"fontFamily":null,"nodeWidth":30,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="social-structure-of-geometric-morphometrics-in-archaeology" class="section level2">
@@ -1096,11 +1094,11 @@ Figure 3.1: The historiographic map is a chronological network map of the most r
 ## 
 ## Main statistics about the network
 ## 
-##  Size                                  401 
-##  Density                               0.037 
+##  Size                                  397 
+##  Density                               0.038 
 ##  Transitivity                          0.955 
 ##  Diameter                              5 
-##  Degree Centralization                 0.165 
+##  Degree Centralization                 0.167 
 ##  Average path length                   2.346 
 ## </code></pre>
 </div>
@@ -1123,11 +1121,11 @@ Figure 3.1: The historiographic map is a chronological network map of the most r
 ## 
 ## Main statistics about the network
 ## 
-##  Size                                  248 
+##  Size                                  247 
 ##  Density                               0.045 
 ##  Transitivity                          0.896 
 ##  Diameter                              12 
-##  Degree Centralization                 0.202 
+##  Degree Centralization                 0.203 
 ##  Average path length                   3.838 
 ## </code></pre>
 </div>
